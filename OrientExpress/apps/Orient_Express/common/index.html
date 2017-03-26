@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html>
+    	<head>
+    	<script src="http://maps.googleapis.com/maps/api/js"></script>
+    	
+    	<script>
+    	html {
+  				text-align: center;
+			}
+			</script>
+    		<meta charset="UTF-8">
+    		<title>Orient_Express</title>
+    		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    		<link rel="stylesheet" href="css/main.css">
+    		<script>window.$ = window.jQuery = WLJQ;</script>
+    		<link rel="stylesheet" href="jquery.mobile-1.4.5.min.css">
+    		
+    		
+			<script src="jquery-1.11.1.min.js"></script>
+			<script src="jquery.mobile-1.4.5.min.js"></script>
+    		<script type="text/javascript" src="cordova.js"></script>
+    		<style type="text/css">
+    		#map{ 
+    		height:500px;  
+    		width:500px; 
+    		}
+    		</style>
+    	</head>
+    	<body>
+    		<div data-role="page" id="page0" data-position="left" data-theme="e" style="background-color: #3b5998;">
+    			<div align="center">
+    				<font size="6" color="White">Speedrefer</font><br>
+					<div align=right>
+						<font size="3" color="White">---Your Search ends here.</font><br>
+					</div>
+					<hr>
+    				<br>
+    				<font size="6" color="White">Login</font>
+    				<br><br><br>
+    				<font size="3" color="White">Username : </font><input type=text id="username" >
+    				<br><br>
+    				<font size="3" color="White">Password  : </font><input type=password id="password" >
+    				<br><br>
+    				<input type="reset">&emsp;&emsp;<input type="button" value="Bang On.!" onclick="login()">
+    		
+    				<div >
+      					<p style="position: fixed; bottom: 1; width:100%; text-align: center">
+      					<br><br><br><br><br>
+     					<font size="3" color="White"> New here Fucking <a style="text-decoration: none; color: white" href="#page2">Click here</a>
+     		
+      					<br><br><br><br><br>
+      					All Rights Reserved       
+      					<br><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;-- Team Speedrefer</font>
+						</p>
+   					</div>
+    			</div>
+    		</div>
+    		<div  data-role="page" id="page1" data-position="left" data-theme="e" style="background-color: #3b5998;">
+    					<div align="center"><font size="6" color="White">Speedrefer</font><br>
+							<div align=right>
+							<font size="3" color="White">---Your Search ends here.</font><br>
+							</div>
+							<hr>
+    						<br>
+    		
+    						<font size="6" color="White">Register</font>
+    						<br><br><br>
+    						<table><tr><td>
+    								<font  size=3 color="White">Name : </font></td><td><input type=text id="uname" ></td></tr><tr></tr>
+    							<tr><td>
+    							<font size="3" color="White">Qualification  : </font></td><td><input type=text id="qual" ></td></tr>
+    							<tr><td>
+    							<font size="3" color="White">Experience  : </font></td><td><input type=text id="exp" ></td></tr>
+    							<tr><td>
+    								<font size="3" color="White">Password  : </font></td><td><input type=password id="pass" ></td></tr>
+    							<tr><td>
+    								<font size="3" color="White">Confirm Password  : </font></td><td><input type=password id="cpass" ></td></tr>
+    							<tr><td>
+    								<input type="reset"></td><td><input type="button"  value="Bang On.!" onclick="regis2()"></td></tr>
+							</table>
+    					</div>
+    					<a href="#page2">clickhere</a>
+    		</div>
+    		 
+    		<div data-role="page" data-position="left" id="page2" data-theme="e" style="background-color: #3b5998;">
+    				<div align="center"><font size="6" color="White">Speedrefer</font><br>
+					<div align=right>
+						<font size="3" color="White">---Your Search ends here.</font><br>
+					</div>
+					<hr>
+    				<br>
+    				<font size="6" color="White">Login</font>
+    				<br><br><br>
+    				<font size="3" color="White">PhoneNumber : </font><input type=text id="phonenum" >
+    				<br><br>
+    				<font size="3" color="White">Verification Code  : </font><input type=text id="ver" >
+    				<br><br>
+    				<input type="reset"><input type="button"  value="Bang On.!" onclick="regis1()">
+    				<a href="#page1">Next</a>
+    			</div>
+			
+    		</div>
+    	<div data-role="page" data-position="left" id="home" data-theme="e" style="background-color: #3b5998;">
+    				<div align="center"><font size="6" color="White">Speedrefer</font><br>
+					<div align=right>
+					
+					 <button onclick="callme()">Current Location</button>
+    	     <div id="map"></div>
+    	    
+					<button onclick="jjj()">Predefined Location</button>
+    	     <div id="googleMap" style="width:500px;height:380px;"></div>
+    	    
+    	</div>
+    		<script src="js/initOptions.js"></script>
+    		<script src="js/main.js"></script>
+    		<script src="js/messages.js"></script>
+    	</body>
+</html>
